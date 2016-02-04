@@ -1,0 +1,17 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "URL Shortener Microservice",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "awwakum",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "mongoose": "^4.3.7",
+    "shortid": "^2.2.4",
+    "validator": "^4.5.2"
+  }
+}
