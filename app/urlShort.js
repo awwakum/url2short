@@ -16,7 +16,6 @@ exports.saveUrl = function(req, res, host) {
 		newLink.shortify();
 		newLink.save(function(err) {
 			if (err) throw err;
-			console.log('Link saved succesfully!');
 		});
 		res.send('new url is added: ' + newLink.origUrl + '\t Short url is: ' + host + '/' + newLink.shortUrl);
 	} // endif
@@ -29,7 +28,7 @@ exports.getUrl = function(req, res) {
 	Url.findOne({ shortUrl: req }, function(err, doc) {
 		if (err) throw err;
 		if(doc === null) 
-			res.status(400).json({error: 'That shortcut does not exist'});
+			res.status(400).json({error: 'That link does not exist'});
 		else {
 			res.redirect(doc.origUrl);
 		}
