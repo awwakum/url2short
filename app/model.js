@@ -30,6 +30,4 @@ urlSchema.methods.shortify = function() {
 	next();
 });*/
 
-//var Url = mongoose.model('Url', urlSchema);
-
 module.exports = mongoose.model('Url', urlSchema);
