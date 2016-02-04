@@ -19,7 +19,7 @@ https://url2short.herokuapp.com/new/invalid?allow=true
 ```
 ### Example creation output: 
 ```sh
-url is found: http://freecodecamp.com/news	Short url is: https://url2short.herokuapp.com/Vkj8Kb2tg
+url is found: http://freecodecamp.com/news	Short url is: https://url2short.herokuapp.com/4kgNpQnKe
 ```
 ### Usage:
 ```sh
