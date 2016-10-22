@@ -30,7 +30,7 @@ exports.getUrl = function(req, res) {
 		if(doc === null) 
 			res.status(400).json({error: 'That link does not exist'});
 		else {
-			res.redirect(doc.origUrl);
+			res.redirect(301, doc.origUrl);
 		}
 	});
 };
